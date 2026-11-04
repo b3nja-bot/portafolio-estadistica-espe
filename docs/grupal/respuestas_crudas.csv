@@ -1,0 +1,101 @@
+Marca temporal,Dirección de correo electrónico,Fecha en la que llena la encuesta,Indique su edad (Ej:20)*,"Indique su estatura en metros y centímetros (Ej:1,65)*",Especifique ¿Cuál es su peso? (Kilos) (Ej: 60)*,Indique la distancia aproximada en kilómetros (km) desde su casa a la universidad (Ej: 12.5) ,¿Cuántas horas de sueño durmió aproximadamente en el último mes? (Ej: 180)*,Indique ¿cuál es su género?,Indique a ¿qué carrera pertenece?,"1. ¿Utiliza frecuentemente algún medio de transporte (bus, auto, moto, bicicleta y más) para llegar a la universidad?  ","  2. En los últimos seis meses, ¿cuántas veces aproximadamente ha utilizado un medio de transporte para movilizarse a la universidad? (valor entero Ej: 120)  ","  3. En los últimos seis meses, ¿cuánto dinero aproximadamente ha gastado en el pago de pasajes o combustible para su traslado a la universidad? (valor decimal Ej: 150.5)  ",  4. Indique cuál es el medio de transporte que más utiliza para llegar a la universidad (Elija una sola).  ,  5. ¿Indique por qué prefiere utilizar el medio de transporte que seleccionó en la pregunta anterior? (Elija una sola)  ,6. ¿En qué porcentaje estima usted que los demás estudiantes elegirán el mismo medio de transporte que usted seleccionó en la pregunta 4?  (valor decimal Ej: 80.0)  ,  7. Califique del 1 al 100 su nivel de satisfacción con el servicio del medio de transporte que utiliza frecuentemente para llegar a la universidad? (valor entero Ej: 80)  ,  8. ¿En qué porcentaje considera que el factor económico (costo) influye en su propia decisión al elegir qué tipo de transporte utiliza para llegar a la universidad? (valor decimal Ej: 75.5)  ,  9. En qué nivel del 1 a 100 recomendaría el uso de su medio de transporte preferido a los estudiantes de la Universidad de las Fuerzas Armadas - ESPE? (valor decimal Ej: 37.4 )
+15/10/2026 19:41:49,afaldas@espe.edu.ec,15/10/2026,20,1.55,50,50km,150,Mujer,TIC´s,Si,196,298.90,Transporte público,Economía / Menor costo,80,60,80.5,2
+15/10/2026 19:54:46,anahipm018@gmail.com,15/10/2026,20,"1,52",51,1.5,204,Mujer,TIC´s,Si,600,300.5,Transporte público,Economía / Menor costo,75.2,42,80.7,22.5
+15/10/2026 22:58:56,yudiniami@gmail.com,15/10/2026,20,"1,58",53.3,30km,245,Mujer,TIC´s,Si,210,211,Transporte público,Economía / Menor costo,70%,60,85%,40
+16/10/2026 23:52:18,paoladiaz.t2@gmail.com,16/09/2026,19,"1,51",47,15,210,Mujer,TIC´s,Si,800,108,Transporte público,Economía / Menor costo,75,60,90,70
+17/10/2026 20:44:24,mjr.pepa77@gmail.com,17/10/2026,21,1.60,55,8,160,Mujer,Ing. en Biotecnología,Si,120,180,auto propio,Seguridad personal,60,100,80,100
+17/10/2026 23:35:42,bellabelcq@gmail.com,17/10/2026,18,1.65,60,20,20,Mujer,TIC´s,Si,180,120,Transporte público,Economía / Menor costo,90.0,50,90.0,50.7
+18/10/2026 14:46:54,alfredofernando.eu@gmail.com,17/10/1976,21,1.7,80,6,210,Hombre,Ing. Civil,Si,140,400,auto propio,Seguridad personal,40,95,80,90
+18/10/2026 16:09:07,jaeldiazlopez777@gmail.com,18/10/2026,21,"1,53",46,16.8,180,Mujer,Ing. Civil,Si,132,240,auto propio,Rapidez y menor tiempo de viaje,50.0,100,80.0,95.5
+18/10/2026 18:21:05,medinasebas038@gmail.com,18/10/2026,21,"1,65",67,28,170,Hombre,TIC´s,Si,140,250.00,Transporte público,Economía / Menor costo,90.0,60,50,52.5
+19/10/2026 13:32:53,ianescobarcolegio@gmail.com,19/10/2026,20,"1,76",80,5.5,80,Hombre,TIC´s,Si,50,50,auto propio,Comodidad y confort,70,100,70.0,40.0
+19/10/2026 19:15:14,montalvokelly742@gmail.com,19/10/2026,20,"1,7",60,24.5,160,Mujer,TIC´s,Si,140,200,Transporte público,Economía / Menor costo,90.3,40,70.8,50
+19/10/2026 19:16:17,jereverafloresricardod@gmail.com,19/10/2026,20,1.71,63,12,240,Hombre,TIC´s,Si,120,240,auto propio,Rapidez y menor tiempo de viaje,20.0,80,50.0,60.0
+19/10/2026 19:16:50,cdherrera2005@gmail.com,19/10/2026,21,1.73,60,3.2,160,Hombre,TIC´s,Si,80,150,auto propio,Comodidad y confort,40.0,95,62.3,74.5
+19/10/2026 19:18:30,poques.bxp@gmail.com,19/10/2026,24,"1,63",55,20,200,Hombre,TIC´s,Si,200,150,Transporte público,Economía / Menor costo,90.0,20,90,50
+19/10/2026 19:24:46,crisabigailcmo21@gmail.com,19/10/2026,22,1.58,56,20 km,170,Mujer,Ing. en Biotecnología,Si,300,300.0,Transporte público,Disponibilidad y accesibilidad de rutas,70.0,40,70,50.7
+19/10/2026 19:27:23,cruzdanna891@gmail.com,19/10/2026,22,1.67,60,25km,7h,Mujer,Ing. en Biotecnología,Si,240,$150,Transporte público,Rapidez y menor tiempo de viaje,90%,95%,60.5,0.0
+19/10/2026 19:27:50,carranander@gmail.com,19/10/2026,2,"1,75",83,6,175,Hombre,TIC´s,No,60,80,auto compartido,Rapidez y menor tiempo de viaje,75,95,95,95
+19/10/2026 19:35:47,helenuvidia@gmail.com,19/10/2026,19,1.56,56,20.4 km,243,Mujer,Ing. Civil,No,164,167.98,Transporte público,Economía / Menor costo,45.7,45,45.6,"27,6"
+19/10/2026 19:38:12,mgintriago1@espe.edu.ec,19/10/2026,20,"1,83",79,75.5,200,Hombre,TIC´s,Si,300,50.5,Transporte público,Economía / Menor costo,75.5,45,90.9,87.7
+19/10/2026 19:43:27,alissonscarleth0708@gmail.com,19/10/2026,21,1.60,60,35,140,Mujer,Ing. en Biotecnología,Si,70,95,buseta de recorrido,Seguridad personal,90,95,67,100
+19/10/2026 19:43:54,andresmateoreyes.09@gmail.com,19/10/2026,21,"1,7",59,38,150,Hombre,Ing. en Biotecnología,Si,180,360,Transporte público,Economía / Menor costo,70,70,80,60
+19/10/2026 19:48:14,paulculkqui@gmail.com,19/10/2026,22,"1,65",56,3.4,210,Hombre,TIC´s,Si,240,120,Transporte público,Rapidez y menor tiempo de viaje,90,70,90,100
+19/10/2026 20:45:01,estefanyllanos53@gmail.com,19/10/2026,21,1.60,61,9.9,210,Mujer,TIC´s,Si,120,180,auto propio,Seguridad personal,85.0,90,80,70
+19/10/2026 22:06:20,sophie.jael29@gmail.com,19/10/2026,20,1.54,49.3,8,180,Mujer,TIC´s,Si,200,240,Transporte público,Economía / Menor costo,80.0,30,90,30
+20/10/2026 6:48:19,jecordova5@espe.edu.ec,20/10/2026,21,1.72,72,4.1,240,Hombre,TIC´s,Si,100,180,Transporte público,Economía / Menor costo,80,60,70,60
+20/10/2026 7:57:00,emilyjurado62@gmail.com,20/10/2026,21,"1,6",50,6,210,Mujer,Ing. en Biotecnología,Si,300,"1,3",auto propio,Disponibilidad y accesibilidad de rutas,30,80,50,80
+20/10/2026 8:24:04,nscampo@espe.edu.ec,20/10/2026,26,1.63,61.5,20,240,Mujer,TIC´s,Si,40,26,Transporte público,Economía / Menor costo,80,80,100,100
+20/10/2026 8:24:24,sebastianlojan55@gmail.com,20/10/2026,23,"1,71",73,48.5,180,Hombre,TIC´s,Si,120,300.50,Transporte público,Economía / Menor costo,75.43,45,"90,67",50.35
+20/10/2026 8:26:23,gonzalez.nathaly.9c@gmail.com,20/10/2026,18,"1,67",74,"61,8",180,Mujer,TIC´s,Si,130,220,auto compartido,Seguridad personal,50,40,80.5,60.5
+20/10/2026 8:26:39,veintimillasmrt@gmail.com,20/10/2026,31,184,81,10,120,Hombre,TIC´s,Si,120,600,Transporte público,Economía / Menor costo,90,70,90,80
+20/10/2026 8:26:56,aamorales21@espe.edu.ec,20/10/2026,23,"1,73",105,6,180,Hombre,TIC´s,Si,20,50,taxi o aplicaciones de movilidad,Rapidez y menor tiempo de viaje,20.1,80,85.9,19.2
+20/10/2026 8:37:05,claritasarahi432@gmail.com,20/10/2026,18,"1,57",67,9.1,90,Mujer,TIC´s,Si,200,150,Transporte público,Economía / Menor costo,70,30,65,70
+20/10/2026 8:39:06,repinos1@espe.edu.ec,20/10/2026,24,"1,54","60,1",6.3,160,Mujer,TIC´s,Si,50,80,auto propio,Rapidez y menor tiempo de viaje,100,80,50,90
+20/10/2026 8:56:35,dfortiz9@espe.edu.ec,20/10/2026,19,"1,69",50,20,100,Hombre,TIC´s,Si,170,"340,35$",Transporte público,Economía / Menor costo,90.0,70,70.0,78.8
+20/10/2026 9:23:52,lmfigueroa1@espe.edu.ec,20/10/2026,21,"1,65",45,22,240,Hombre,TIC´s,Si,182,100.64,Transporte público,Economía / Menor costo,90.0,30,30.0,30.0
+20/10/2026 9:25:24,santiagojosegv132@gmail.com,20/10/2026,23,1.60,55,2,150,Hombre,TIC´s,Si,60,50.0,Transporte público,Economía / Menor costo,70.3,60,90.5,40.3
+20/10/2026 9:28:00,alexander.llumiquinga002812@gmail.com,20/10/2026,18,"1,8",80,5,170,Hombre,TIC´s,Si,132,200,taxi o aplicaciones de movilidad,Rapidez y menor tiempo de viaje,70.0,100,70,80
+20/10/2026 9:29:34,lecollaguazo1@espe.edu.ec,20/10/2026,25,"1,65",60,20,168,Hombre,TIC´s,Si,120,165,Transporte público,Economía / Menor costo,85.0,10,90.0,90.0
+20/10/2026 9:33:29,britcel18@gmail.com,20/10/2026,19,"1,7",64,19,240,Mujer,TIC´s,Si,120,$320.50,Transporte público,Economía / Menor costo,90.0,50,100,50
+20/10/2026 11:04:28,natalia.ced179@gmail.com,20/10/2026,19,"1,72",56,21,210,Mujer,TIC´s,Si,332,341.7,Transporte público,Economía / Menor costo,80.0,60,80.5,60
+20/10/2026 11:14:43,jilmarlojan181@gmail.com,20/10/2026,24,1.65,65,24,240,Hombre,TIC´s,Si,60,95,buseta de recorrido,Seguridad personal,80,80,80,80
+20/10/2026 11:20:52,jazambrano21@espe.edu.ec,20/10/2026,24,"1,65",73,26km,6,Hombre,TIC´s,Si,120,200,Transporte público,Economía / Menor costo,80.5,80,95.5,75.0
+20/10/2026 11:22:42,adrianrenato96@gmail.com,20/10/2026,25,1.65,60,12.5,80,Hombre,TIC´s,Si,180,150,Transporte público,Disponibilidad y accesibilidad de rutas,100,50,100,70
+20/10/2026 11:26:28,alisonmagali281@gmail.com,20/10/2026,20,"1,6",48,10,120,Mujer,Ing. en Biotecnología,Si,100,100,Transporte público,Economía / Menor costo,70,20,50,30
+20/10/2026 11:53:12,emimadrid456@gmail.com,20/10/2026,18,"1,58",43,"21,9",100,Mujer,TIC´s,Si,200,200,Transporte público,Disponibilidad y accesibilidad de rutas,100,80,50,20
+20/10/2026 12:17:25,jhoeldumancela2006@gmail.com,20/10/2026,20,"1,7",63,12.2,210,Hombre,TIC´s,Si,360,180,Transporte público,Economía / Menor costo,80,70,50,40
+20/10/2026 17:22:38,jmsandoval5@espe.edu.ec,20/10/2026,21,1.60,86,62,360,Hombre,TIC´s,Si,200,1000,auto propio,Rapidez y menor tiempo de viaje,60,90,99.9,80.8
+20/10/2026 18:57:59,heidimejiau@gmail.com,20/10/2026,19,1.62,87kg,8.7,60,Mujer,TIC´s,Si,700 uso a diario,1008.79,auto compartido,Seguridad personal,60.8,50,80.5,40.5
+20/10/2026 20:29:23,jaquishpe25@espe.edu.ec,20/10/2026,20,"1,56",60,30 km,180,Mujer,TIC´s,Si,264,$224.40,Transporte público,Disponibilidad y accesibilidad de rutas,80.00,50,95.00,40.00
+21/10/2026 13:42:17,alambritiio@gmail.com,21/10/2026,24,1.82,92,3.5,120,Hombre,Ing. Civil,Si,400,300.1,taxi o aplicaciones de movilidad,Rapidez y menor tiempo de viaje,10.0,85,50.4,90.5
+21/10/2026 15:54:42,mailaesteban57@gmail.com,21/10/2026,21,"1,79",60,22,180,Hombre,TIC´s,No,204,144.0,Transporte público,Economía / Menor costo,80.0,60,50,60.0
+21/10/2026 16:21:57,estefanopanchito@gmail.com,21/10/2026,19,"1,73",68,18,240,Hombre,TIC´s,Si,60,"120,2",Transporte público,Economía / Menor costo,90.9,70,85.5,75.5
+21/10/2026 17:32:20,guillozambrano2007@gmail.com,10/03/2007,19,"1,65",63,28,150,Hombre,Ing. Civil,Si,500,400,Transporte público,Economía / Menor costo,75.25,60,80.00,60.5
+21/10/2026 17:33:04,alizhangallimbay20@gmail.com,21/10/2026,18,"1,59",53,2,260,Mujer,Ing. en Biotecnología,No,6,10,Transporte público,Economía / Menor costo,85.5,60,75.5,85.9
+22/10/2026 15:52:05,mvloachamin1@espe.edu.ec,22/10/2026,20,"1,7",59,15,135,Hombre,TIC´s,Si,180,145.5,Transporte público,Comodidad y confort,90.4,70,59.2,85
+22/10/2026 17:50:44,sasimba1@espe.edu.ec,22/10/2026,18,"1,62",59,6,186,Mujer,TIC´s,Si,360,"151,2",Transporte público,Economía / Menor costo,75.0,50,75,50
+24/10/2026 16:41:58,cblopez3@espe.edu.ec,24/10/2026,20,1.70,64,15.5,200,Hombre,TIC´s,Si,60,100.6,auto propio,Rapidez y menor tiempo de viaje,60.4,40,45.5,80.67
+24/10/2026 16:47:50,loyt.sv@gmail.com,24/10/2026,20,1.79,70,20.4,170,Hombre,Ing. Civil,Si,160,135.8,"bicicleta, scooter o patineta",Economía / Menor costo,67.9,45,67.3,47.9
+24/10/2026 17:15:40,antigravitycnta1@gmail.com,24/10/2026,24,"1,8",80,18.3,126,Hombre,Ing. Civil,Si,230,170.2,auto compartido,Comodidad y confort,56.8,57,63.86,65.9
+26/10/2026 8:10:17,lemaroger28@gmail.com,26/10/2026,22,"1,67",50,42,150,Hombre,TIC´s,Si,80,195,Transporte público,Economía / Menor costo,70,50,90,60
+27/10/2026 17:14:54,benjaminsitocl@gmail.com,27/10/2026,20,1.70,65,10,300,Hombre,TIC´s,Si,300,120.5,auto propio,Comodidad y confort,67.45,89,30.34,56.30
+29/10/2026 21:11:54,jdchisaguano2@espe.edu.ec,29/10/2026,20,"1,8",65,12.5,180,Prefiero no decirlo,TIC´s,Si,125,150.5,Transporte público,Rapidez y menor tiempo de viaje,85.5,90,50.5,45.5
+30/10/2026 7:59:43,uemajs1achambaemily@gmail.com,30/10/2026,21,1.70,55,80km,160,Mujer,TIC´s,Si,40,125,Transporte público,Economía / Menor costo,70.0,6,80.0,70.0
+30/10/2026 9:28:09,dayanara15bautista@gmail.com,30/10/2026,22,"1,58",50 kg,25 km,140,Mujer,TIC´s,Si,111,200,auto propio,Economía / Menor costo,70,8,60,30.1
+30/10/2026 9:28:25,jpmejia10@espe.edu.ec,30/10/2026,18,1.90,70,30,180,Hombre,TIC´s,Si,120,150,Transporte público,Rapidez y menor tiempo de viaje,80,80,75,37
+30/10/2026 9:31:18,ierecalde@espe.edu.ec,30/10/2026,20,1.60,55,5.6,260,Hombre,TIC´s,Si,360,120.5,Transporte público,Economía / Menor costo,70.0,80,90.0,70.9
+30/10/2026 9:33:03,narvaezantonella277@gmail.com,30/10/2026,22,"1,62",65,4,300,Mujer,TIC´s,Si,120,"150,4",Transporte público,Economía / Menor costo,90,50,"75,5","80,5"
+30/10/2026 9:33:27,jhanisanahi2005@gmail.com,30/10/2026,21,"1,64",88,14,240,Mujer,Ing. Civil,Si,200,"80,5",Transporte público,Economía / Menor costo,"90,39",85,"76,12","36,94"
+30/10/2026 9:33:34,ajrevelo2@espe.edu.ec,30/10/2026,20,1.70,70,1,180,Hombre,TIC´s,Si,140,150,taxi o aplicaciones de movilidad,Rapidez y menor tiempo de viaje,82,80.5,80.2,40.3
+30/10/2026 9:33:54,kgzambrano7@espe.edu.ec,30/10/2026,19,"1,65",63,28.0,150,Hombre,Ing. Civil,Si,500,500,Transporte público,Economía / Menor costo,75.5,50,90.5,58.5
+30/10/2026 9:34:24,yosoyjuliam06@gmail.com,30/10/2026,19,"1,75",58,11.8,190,Hombre,TIC´s,Si,240,110.5,Transporte público,Economía / Menor costo,50.0,70,90.0,56.5
+30/10/2026 9:34:37,sebastianguaycha11@gmail.com,30/10/2026,21,"1,7",70,32,120,Hombre,TIC´s,Si,120,80.3,Transporte público,Rapidez y menor tiempo de viaje,84.6,73,76.5,47.4
+30/10/2026 9:34:51,jejomac@gmail.com,30/10/2026,22,1.78,103,22.5,152,Hombre,TIC´s,Si,456,250,Transporte público,Economía / Menor costo,90,70,90.9,75.3
+30/10/2026 9:35:50,ianesc188@gmail.com,30/10/2026,20,"1,76",80,15,90,Hombre,TIC´s,No,40,120,auto propio,Rapidez y menor tiempo de viaje,70.0,100,90.0,100.0
+30/10/2026 9:36:19,anahipilatasig10@gmail.com,30/10/2026,20,"1,53",53,15,176,Mujer,TIC´s,Si,264,"265,38",Transporte público,Economía / Menor costo,"64,3",65,87.2,43.5
+30/10/2026 9:36:42,jtapiasuarez49@gmail.com,30/10/2026,22,"1,87",109,23,190,Hombre,TIC´s,Si,240,"192,67",Transporte público,Economía / Menor costo,97.0,87,85.5,99.9
+30/10/2026 9:37:28,loachaminmati1@gmail.com,30/10/2026,20,"1,7",60,16,229,Hombre,TIC´s,Si,690,400,Transporte público,Disponibilidad y accesibilidad de rutas,95.0,70,55.8,79.2
+30/10/2026 9:40:11,janinecayo1479@gmail.com,30/10/2026,20,"1,59",55,5,200,Mujer,TIC´s,Si,250,63,Transporte público,Economía / Menor costo,85,40,80.5,75.6
+30/10/2026 9:41:02,mateocatota7@gmail.com,30/10/2026,20,"1,67","65,6",23,200,Hombre,TIC´s,Si,500,135,Transporte público,Disponibilidad y accesibilidad de rutas,85.6,56,79.6,67
+30/10/2026 9:44:43,jesangurima@espe.edu.ec,30/10/2026,23,"1,73",74,"1,2",240,Hombre,Ing. Civil,Si,40,"20,5",Transporte público,Economía / Menor costo,70.5,30,"90,5","30,5"
+30/10/2026 9:47:30,sxchafla@espe.edu.ec,30/10/2026,21,"1,65",70,6.5,180,Hombre,TIC´s,Si,100,150.5,Transporte público,Disponibilidad y accesibilidad de rutas,81.0,82,90.5,80.5
+30/10/2026 9:47:39,joanviteri03@gmail.com,30/10/2026,23,"1,71",71,12.5,600,Hombre,Ing. Civil,Si,240,168.0,Transporte público,Economía / Menor costo,60.0,10,60.0,10.0
+30/10/2026 10:27:52,cs023878@gmail.com,30/10/2026,22,"1,53",80,40,300,Prefiero no decirlo,TIC´s,Si,120,150,Transporte público,Economía / Menor costo,0.20,80,20.5,20
+30/10/2026 23:36:41,lenincuichan0@gmail.com,30/10/2026,19,"1,59",55,18.1,179,Hombre,TIC´s,No,74,159.3,taxi o aplicaciones de movilidad,Rapidez y menor tiempo de viaje,43.0,50,73.8,60.2
+31/10/2026 18:25:35,gabbysemblantes1985@gmail.com,31/10/2026,21,"1,55",60,12.2,150,Hombre,TIC´s,Si,5060,40,Transporte público,Economía / Menor costo,90,80,100,100
+31/10/2026 22:48:25,abelsuarez22@gmail.com,31/10/2026,22,"1,79",69,23.1,190,Hombre,Ing. en Biotecnología,No,141,189.2,auto compartido,Comodidad y confort,67.2,84,50.0,72.2
+31/10/2026 22:48:37,eipenaloza@espe.edu.ec,31/10/2026,19,"1,65",59,32,180,Mujer,Ing. en Biotecnología,Si,150,130,buseta de recorrido,Seguridad personal,70,50,70,60
+31/10/2026 22:56:48,mafer_morales01@gmail.com,31/10/2026,24,"1,72",57,26.4,203,Hombre,Ing. Civil,No,141,94.7,auto compartido,Economía / Menor costo,39.7,61,61.4,73.6
+31/10/2026 22:58:27,juancho.herrera97@gmail.com,31/10/2026,24,"1,83",55,22.3,178,Hombre,TIC´s,No,140,189.3,Transporte público,Seguridad personal,78.4,68,79.6,59.5
+31/10/2026 23:08:23,pao_alvarez.ec@gmail.com,31/10/2026,23,"1,82",55,12.7,234,Prefiero no decirlo,TIC´s,No,107,57.5,buseta de recorrido,Comodidad y confort,41.9,89,91.0,67.4
+31/10/2026 23:12:56,cris.mendoza_23@gmail.com,31/10/2026,25,"1,71",67,30.2,193,Mujer,TIC´s,Si,126,136.0,auto propio,Comodidad y confort,39.1,63,50.9,59.9
+31/10/2026 23:18:14,dani.rodriguez.v@gmail.com,31/10/2026,21,"1,79",63,24.9,219,Mujer,TIC´s,Si,134,112.0,auto propio,Seguridad personal,74.4,87,66.2,35.1
+31/10/2026 23:23:18,alejo_gomez94@gmail.com,31/10/2026,22,"1,81",66,5.2,225,Hombre,Ing. Civil,Si,137,136.8,auto propio,Seguridad personal,88.9,65,74.7,89.8
+31/10/2026 23:28:04,sol.cardenas1208@gmail.com,31/10/2026,20,"1,66",72,5.6,214,Prefiero no decirlo,TIC´s,Si,86,70.0,Transporte público,Disponibilidad y accesibilidad de rutas,60.1,53,91.0,39.5
+31/10/2026 23:33:23,nico.villalba99@gmail.com,31/10/2026,21,"1,74",52,30.5,152,Prefiero no decirlo,Ing. en Biotecnología,Si,82,71.1,Transporte público,Rapidez y menor tiempo de viaje,39.4,89,52.3,93.7
+1/11/2026 11:26:35,gabrielac_04@gmail.com,1/11/2026,24,"1,59",79,16.3,210,Mujer,TIC´s,Si,80,73.6,auto propio,Disponibilidad y accesibilidad de rutas,84.3,90,90.1,92.8
+1/11/2026 11:31:22,sebas_perez.m@gmail.com,1/11/2026,23,"1,55",69,15.4,197,Prefiero no decirlo,Ing. en Biotecnología,Si,94,142.9,auto propio,Rapidez y menor tiempo de viaje,61.7,52,60.6,73.0
+1/11/2026 11:37:34,andre.flores.17@gmail.com,1/11/2026,19,"1,56",62,27.7,208,Mujer,Ing. en Biotecnología,Si,101,81.7,auto compartido,Seguridad personal,67.1,86,40.4,70.8
+1/11/2026 11:44:27,domi_salazar02@gmail.com,1/11/2026,22,"1,78",60,4.1,200,Prefiero no decirlo,TIC´s,Si,101,143.8,taxi o aplicaciones de movilidad,Seguridad personal,45.7,95,87.2,42.0
+1/11/2026 11:49:22,leo.castillo.ec@gmail.com,1/11/2026,24,"1,64",83,30.3,233,Mujer,TIC´s,Si,89,73.4,buseta de recorrido,Comodidad y confort,77.7,76,85.4,44.3

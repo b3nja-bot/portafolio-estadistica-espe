@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Digital de Estadística | Transporte Universitario ESPE - NRC 36256</title>
+    <!-- Favicon institucional -->
+    <link rel="icon" type="image/png" href="img/logo_espe.png">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        outfit: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        espe: {
+                            green: '#005C3E',
+                            darkgreen: '#00432c',
+                            navy: '#0B2545',
+                            darknavy: '#07162c',
+                            red: '#8D0801',
+                            gold: '#D4AF37',
+                            cardbg: '#0f172a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Estilos personalizados y soporte offline */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #070d17;
+            color: #f1f5f9;
+        }
+        .font-heading {
+            font-family: 'Outfit', sans-serif;
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-panel-hover:hover {
+            background: rgba(30, 41, 59, 0.85);
+            border-color: rgba(0, 92, 62, 0.4);
+            box-shadow: 0 10px 25px -5px rgba(0, 92, 62, 0.2);
+        }
+        .transit-glow {
+            box-shadow: 0 0 35px -5px rgba(0, 92, 62, 0.35);
+        }
+        .hero-pattern {
+            background-image: radial-gradient(rgba(0, 92, 62, 0.18) 1.5px, transparent 1.5px), radial-gradient(rgba(11, 37, 69, 0.3) 1.5px, #070d17 1.5px);
+            background-size: 36px 36px;
+            background-position: 0 0, 18px 18px;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b1324;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #005C3E;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #007c54;
+        }
+    </style>
+</head>
+<body class="hero-pattern min-h-screen selection:bg-emerald-600 selection:text-white">
+
+    <!-- Header / Navbar Principal -->
+    <header class="sticky top-0 z-40 glass-panel border-b border-slate-800/80 px-4 lg:px-8 py-3.5 transition-all">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <!-- Logos e Institución -->
+            <div class="flex items-center gap-3.5">
+                <img src="img/logo_espe_oficial.png" alt="ESPE Logo" class="h-10 md:h-12 w-auto object-contain bg-white/95 p-1 rounded-lg shadow-md">
+                <img src="img/logo_itin_header.jpg" alt="ITIN Logo" class="h-10 md:h-12 w-auto object-contain rounded-lg border border-slate-700 hidden sm:block">
+                <div>
+                    <span class="text-xs font-semibold tracking-wider text-emerald-400 uppercase block font-heading">Universidad de las Fuerzas Armadas ESPE</span>
+                    <h1 class="text-sm md:text-base font-bold text-slate-100 flex items-center gap-1.5 font-heading">
+                        Portafolio Digital de Estadística
+                        <span class="bg-emerald-950 text-emerald-300 border border-emerald-700/50 text-[11px] px-2 py-0.5 rounded-full font-mono">NRC 36256</span>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Navegación Rápida -->
+            <nav class="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm font-medium">
+                <a href="#parciales" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition">Parciales</a>
+                <a href="#videos" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition flex items-center gap-1">
+                    <i data-lucide="video" class="w-3.5 h-3.5 text-red-500"></i> Videos
+                </a>
+                <a href="#informe-grupal" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition flex items-center gap-1">
+                    <i data-lucide="users" class="w-3.5 h-3.5 text-blue-400"></i> Proyecto Grupal
+                </a>
+                <a href="#proyectos-individuales" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition flex items-center gap-1">
+                    <i data-lucide="user" class="w-3.5 h-3.5 text-emerald-400"></i> Individuales
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section con Temática de Transporte -->
+    <section class="relative pt-12 pb-16 px-4 lg:px-8 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <!-- Badge Temático -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-medium mb-6 animate-pulse">
+                <i data-lucide="bus" class="w-4 h-4"></i>
+                <span>Estudio de Movilidad & Movilización Universitaria — Campus Sangolquí</span>
+            </div>
+
+            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 font-heading leading-tight">
+                Análisis Estadístico del Transporte en la <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">ESPE</span>
+            </h2>
+
+            <p class="max-w-3xl mx-auto text-sm sm:text-base md:text-lg text-slate-300 font-normal leading-relaxed mb-8">
+                Portafolio académico integral de la cátedra de <strong>Estadística</strong>, impartida por la <strong>Ing. Alexandra Elizabeth Escobar Méndez</strong>. 
+                Recopilación metodológica de datos muestrales, tabulaciones matriciales, formulación avanzada en <strong>Microsoft Excel</strong>, validación científica en <strong>Jamovi</strong> y redacción editorial en <strong>LaTeX</strong>.
+            </p>
+
+            <!-- Ticker de Indicadores de Movilidad -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto mt-6">
+                <div class="glass-panel p-4 rounded-xl text-center border-l-4 border-emerald-500">
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-white font-heading">100</span>
+                    <span class="text-xs text-slate-400 uppercase tracking-wide">Muestra Censada</span>
+                </div>
+                <div class="glass-panel p-4 rounded-xl text-center border-l-4 border-cyan-500">
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-white font-heading">90</span>
+                    <span class="text-xs text-slate-400 uppercase tracking-wide">Usuarios Efectivos ($n=90$)</span>
+                </div>
+                <div class="glass-panel p-4 rounded-xl text-center border-l-4 border-amber-500">
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-white font-heading">17</span>
+                    <span class="text-xs text-slate-400 uppercase tracking-wide">Variables Analizadas</span>
+                </div>
+                <div class="glass-panel p-4 rounded-xl text-center border-l-4 border-indigo-500">
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-white font-heading">5</span>
+                    <span class="text-xs text-slate-400 uppercase tracking-wide">Investigadores</span>
+                </div>
+            </div>
+
+            <!-- Equipo de Investigadores -->
+            <div class="mt-8 pt-6 border-t border-slate-800/80 max-w-5xl mx-auto">
+                <p class="text-xs text-slate-400 uppercase font-semibold tracking-wider mb-3">Equipo de Trabajo (Orden Alfabético Institucional)</p>
+                <div class="flex flex-wrap justify-center gap-2 sm:gap-3 text-xs sm:text-sm">
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 border border-slate-700 text-slate-200 flex items-center gap-1.5">
+                        <i data-lucide="user-check" class="w-3.5 h-3.5 text-emerald-400"></i> Cuichan Males Lenin Esteban
+                    </span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 border border-slate-700 text-slate-200 flex items-center gap-1.5">
+                        <i data-lucide="user-check" class="w-3.5 h-3.5 text-emerald-400"></i> Escobar Rivadeneira Ian Alfredo
+                    </span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 border border-emerald-500/40 text-emerald-200 bg-emerald-950/40 font-medium flex items-center gap-1.5">
+                        <i data-lucide="user-check" class="w-3.5 h-3.5 text-emerald-400"></i> López Aguilar Christian Benjamín
+                    </span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 border border-slate-700 text-slate-200 flex items-center gap-1.5">
+                        <i data-lucide="user-check" class="w-3.5 h-3.5 text-emerald-400"></i> Marquez Crespo Jeremy Joel
+                    </span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 border border-slate-700 text-slate-200 flex items-center gap-1.5">
+                        <i data-lucide="user-check" class="w-3.5 h-3.5 text-emerald-400"></i> Recalde Semblantes Isaac Eduardo
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: SELECTOR DE LOS TRES PARCIALES (Requerimiento de la Rúbrica) -->
+    <section id="parciales" class="py-8 px-4 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-6">
+            <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest font-heading">Navegación Modular por Periodo Académico</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white font-heading mt-1">Seleccione el Parcial a Evaluar</h3>
+        </div>
+
+        <!-- Botones de Parciales -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <!-- Botón 1er Parcial (Activo) -->
+            <button onclick="switchParcial(1)" id="btn-p1" class="py-4 px-6 rounded-2xl font-bold font-heading text-base sm:text-lg transition-all duration-300 flex flex-col items-center justify-center gap-1 bg-gradient-to-r from-emerald-600 to-teal-700 text-white shadow-lg transit-glow ring-2 ring-emerald-400">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="folder-check" class="w-5 h-5"></i>
+                    <span>PRIMER PARCIAL</span>
+                </div>
+                <span class="text-xs font-normal text-emerald-100">Estadística Descriptiva & Movilidad</span>
+                <span class="text-[10px] bg-emerald-900/90 text-emerald-200 px-2 py-0.5 rounded-full mt-1 border border-emerald-400/40">COMPLETO Y DISPONIBLE</span>
+            </button>
+
+            <!-- Botón 2do Parcial (Próximamente) -->
+            <button onclick="switchParcial(2)" id="btn-p2" class="py-4 px-6 rounded-2xl font-bold font-heading text-base sm:text-lg transition-all duration-300 flex flex-col items-center justify-center gap-1 bg-slate-900/80 border border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-300">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="lock" class="w-5 h-5 text-slate-500"></i>
+                    <span>SEGUNDO PARCIAL</span>
+                </div>
+                <span class="text-xs font-normal text-slate-500">Probabilidades & Distribuciones</span>
+                <span class="text-[10px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded-full mt-1">PRÓXIMAMENTE</span>
+            </button>
+
+            <!-- Botón 3er Parcial (Próximamente) -->
+            <button onclick="switchParcial(3)" id="btn-p3" class="py-4 px-6 rounded-2xl font-bold font-heading text-base sm:text-lg transition-all duration-300 flex flex-col items-center justify-center gap-1 bg-slate-900/80 border border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-300">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="lock" class="w-5 h-5 text-slate-500"></i>
+                    <span>TERCER PARCIAL</span>
+                </div>
+                <span class="text-xs font-normal text-slate-500">Inferencia & Pruebas de Hipótesis</span>
+                <span class="text-[10px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded-full mt-1">PRÓXIMAMENTE</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- CONTENIDO DEL PRIMER PARCIAL -->
+    <main id="contenido-parcial-1" class="space-y-16 pb-20">
+
+        <!-- ============================================================ -->
+        <!-- 1. SECCIÓN DE VIDEOS (INFORMATIVO & EDUCATIVO)               -->
+        <!-- ============================================================ -->
+        <section id="videos" class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="flex items-center gap-3 mb-6 border-b border-slate-800 pb-4">
+                <div class="w-10 h-10 rounded-xl bg-red-950/80 border border-red-500/40 flex items-center justify-center text-red-400">
+                    <i data-lucide="youtube" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white font-heading">Videos Académicos del Primer Parcial</h3>
+                    <p class="text-xs sm:text-sm text-slate-400">Requerimiento audiovisual oficial: Organizador Gráfico de Fórmulas y Tutorial de Ejercicios Aplicados.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Video 1: Informativo -->
+                <div class="glass-panel p-5 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-red-950 text-red-300 border border-red-800/60 flex items-center gap-1.5">
+                                <i data-lucide="play-circle" class="w-3.5 h-3.5"></i> Video 1: Informativo
+                            </span>
+                            <span class="text-xs text-slate-400">Máx. 3 minutos</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white font-heading mb-2">Organizador Gráfico de Temas y Fórmulas (1P)</h4>
+                        <p class="text-xs sm:text-sm text-slate-300 mb-4 leading-relaxed">
+                            Exposición colaborativa de los 5 integrantes del equipo recorriendo de manera secuencial todos y cada uno de los conceptos, estadígrafos para datos no agrupados, fórmulas de interpolación y medidas de dispersión/forma del primer parcial.
+                        </p>
+                    </div>
+
+                    <!-- Iframe Video Embebido -->
+                    <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-slate-950 border border-slate-800 shadow-inner">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/hFeQ6I-r05A" title="Video Informativo - Estadística ESPE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-slate-800/60 flex items-center justify-between text-xs">
+                        <span class="text-slate-400">Participantes: Todos los integrantes</span>
+                        <a href="https://youtu.be/hFeQ6I-r05A" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1">
+                            Abrir en YouTube <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video 2: Educativo -->
+                <div class="glass-panel p-5 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-blue-950 text-blue-300 border border-blue-800/60 flex items-center gap-1.5">
+                                <i data-lucide="graduation-cap" class="w-3.5 h-3.5"></i> Video 2: Educativo / Tutorial
+                            </span>
+                            <span class="text-xs text-slate-400">Resolución Práctica</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white font-heading mb-2">Tutorial de Ejercicios Aplicados con Datos de la Encuesta</h4>
+                        <p class="text-xs sm:text-sm text-slate-300 mb-4 leading-relaxed">
+                            Demostración paso a paso del desarrollo de ejercicios prácticos basados netamente en las observaciones de la muestra de transporte universitario recolectada, ilustrando media, mediana, moda y dispersión con rigor algebraico.
+                        </p>
+                    </div>
+
+                    <!-- Iframe Video Embebido -->
+                    <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-slate-950 border border-slate-800 shadow-inner">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/2n95KK2AuXs" title="Video Educativo - Estadística ESPE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-slate-800/60 flex items-center justify-between text-xs">
+                        <span class="text-slate-400">Datos: Muestra Real de Transporte</span>
+                        <a href="https://youtu.be/2n95KK2AuXs" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1">
+                            Abrir en YouTube <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 2. SECCIÓN: PROYECTO GENERAL DE LA ENCUESTA (GRUPAL)         -->
+        <!-- ============================================================ -->
+        <section id="informe-grupal" class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="flex items-center gap-3 mb-6 border-b border-slate-800 pb-4">
+                <div class="w-10 h-10 rounded-xl bg-emerald-950/80 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+                    <i data-lucide="file-text" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white font-heading">Informe General de la Encuesta (Proyecto Grupal)</h3>
+                    <p class="text-xs sm:text-sm text-slate-400">Documento unificado oficial: 21 páginas con el desglose integral de las 17 variables recopiladas (1 variable por página).</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Tarjeta Descriptiva del Informe Grupal -->
+                <div class="lg:col-span-5 glass-panel p-6 rounded-2xl space-y-5">
+                    <div class="border-b border-slate-800 pb-4">
+                        <span class="text-xs font-mono uppercase text-emerald-400">Documento Oficial Consolidado</span>
+                        <h4 class="text-xl font-bold text-white font-heading mt-1">Informe_General_Encuesta.pdf</h4>
+                        <p class="text-xs text-slate-400 mt-1">21 Páginas | Formato APA 7ma Edición | MiKTeX 25.12</p>
+                    </div>
+
+                    <div class="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        <p>
+                            Siguiendo las directrices expresas de la cátedra, el informe grupal analiza secuencialmente desde la variable temporal de registro hasta las 9 preguntas de fondo sobre movilidad:
+                        </p>
+                        <ul class="space-y-2 pl-4 list-disc text-slate-300">
+                            <li><strong>Variables 1 a 8:</strong> Fecha de llenado, edad, estatura, peso, distancia al campus, horas de sueño, género y carrera ($n = 100$ encuestados generales).</li>
+                            <li><strong>Variable 9 (Filtro):</strong> Uso habitual de transporte público/privado (90 Sí, 10 No).</li>
+                            <li><strong>Variables 10 a 17:</strong> Preguntas de investigación evaluadas sobre la submuestra positiva efectiva ($n = 90$ usuarios de transporte).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Botones de Acción -->
+                    <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row gap-3">
+                        <button onclick="openModalPdf('docs/grupal/Informe_General_Encuesta.pdf', 'Informe General de la Encuesta (Grupal - 21 Páginas)')" class="flex-1 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-md">
+                            <i data-lucide="eye" class="w-4 h-4"></i> Previsualizar Documento
+                        </button>
+                        <a href="docs/grupal/Informe_General_Encuesta.pdf" download class="py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 transition border border-slate-700">
+                            <i data-lucide="download" class="w-4 h-4"></i> Descargar PDF
+                        </a>
+                    </div>
+
+                    <!-- Recursos de Datos Crudos -->
+                    <div class="pt-3 border-t border-slate-800/60">
+                        <span class="text-xs font-semibold text-slate-400 block mb-2">Bases de Datos de la Encuesta:</span>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <a href="docs/grupal/respuestas_crudas.csv" download class="px-2.5 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 hover:text-emerald-400 transition flex items-center gap-1">
+                                <i data-lucide="table" class="w-3.5 h-3.5"></i> Respuestas Crudas (CSV)
+                            </a>
+                            <a href="docs/grupal/datos_jamovi.csv" download class="px-2.5 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 hover:text-emerald-400 transition flex items-center gap-1">
+                                <i data-lucide="database" class="w-3.5 h-3.5"></i> Datos para Jamovi (CSV)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visor Embebido Interactivo -->
+                <div class="lg:col-span-7 glass-panel p-3 rounded-2xl overflow-hidden shadow-2xl">
+                    <div class="flex items-center justify-between px-3 py-2 bg-slate-900/90 rounded-xl mb-3 border border-slate-800 text-xs">
+                        <span class="text-slate-300 font-mono flex items-center gap-1.5">
+                            <i data-lucide="file-check" class="w-4 h-4 text-emerald-400"></i> Visor Oficial: Informe_General_Encuesta.pdf
+                        </span>
+                        <button onclick="toggleFullscreenIframe('grupal-frame')" class="text-slate-400 hover:text-white transition flex items-center gap-1">
+                            <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> Pantalla Completa
+                        </button>
+                    </div>
+                    <div class="w-full h-[520px] rounded-xl overflow-hidden bg-slate-950 border border-slate-800">
+                        <iframe id="grupal-frame" src="docs/grupal/Informe_General_Encuesta.pdf#toolbar=1" class="w-full h-full" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 3. SECCIÓN: PROYECTOS INDIVIDUALES DE LOS 5 INTEGRANTES      -->
+        <!-- ============================================================ -->
+        <section id="proyectos-individuales" class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="flex items-center gap-3 mb-6 border-b border-slate-800 pb-4">
+                <div class="w-10 h-10 rounded-xl bg-cyan-950/80 border border-cyan-500/40 flex items-center justify-center text-cyan-400">
+                    <i data-lucide="folder-git-2" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white font-heading">Proyectos Individuales de Investigación</h3>
+                    <p class="text-xs sm:text-sm text-slate-400">Desglose univariado obligatorio por estudiante: Informe formal, manual de software y libro de cálculo Excel / Jamovi.</p>
+                </div>
+            </div>
+
+            <!-- Selector de Estudiantes (Tabs Interactivos) -->
+            <div class="flex overflow-x-auto gap-2 pb-2 mb-8 no-scrollbar">
+                <button onclick="selectStudent('benjamin')" id="tab-benjamin" class="student-tab px-4 py-2.5 rounded-xl font-bold font-heading text-xs sm:text-sm whitespace-nowrap transition-all duration-200 bg-emerald-600 text-white shadow-md ring-2 ring-emerald-400">
+                    Christian Benjamín López
+                </button>
+                <button onclick="selectStudent('esteban')" id="tab-esteban" class="student-tab px-4 py-2.5 rounded-xl font-bold font-heading text-xs sm:text-sm whitespace-nowrap transition-all duration-200 bg-slate-800/80 text-slate-400 hover:text-slate-200 hover:bg-slate-800">
+                    Lenin Esteban Cuichan
+                </button>
+                <button onclick="selectStudent('ian')" id="tab-ian" class="student-tab px-4 py-2.5 rounded-xl font-bold font-heading text-xs sm:text-sm whitespace-nowrap transition-all duration-200 bg-slate-800/80 text-slate-400 hover:text-slate-200 hover:bg-slate-800">
+                    Ian Alfredo Escobar
+                </button>
+                <button onclick="selectStudent('isaac')" id="tab-isaac" class="student-tab px-4 py-2.5 rounded-xl font-bold font-heading text-xs sm:text-sm whitespace-nowrap transition-all duration-200 bg-slate-800/80 text-slate-400 hover:text-slate-200 hover:bg-slate-800">
+                    Isaac Eduardo Recalde
+                </button>
+                <button onclick="selectStudent('jeremy')" id="tab-jeremy" class="student-tab px-4 py-2.5 rounded-xl font-bold font-heading text-xs sm:text-sm whitespace-nowrap transition-all duration-200 bg-slate-800/80 text-slate-400 hover:text-slate-200 hover:bg-slate-800">
+                    Jeremy Joel Marquez
+                </button>
+            </div>
+
+            <!-- CONTENEDOR 1: CHRISTIAN BENJAMÍN LÓPEZ AGUILAR -->
+            <div id="content-benjamin" class="student-content glass-panel p-6 sm:p-8 rounded-2xl">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 border-b border-slate-800 pb-5 mb-6">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-xs font-mono uppercase bg-emerald-950 text-emerald-300 border border-emerald-700/60 px-2 py-0.5 rounded">NRC: 36256</span>
+                            <span class="text-xs text-slate-400">Carrera: Tecnologías de la Información</span>
+                        </div>
+                        <h4 class="text-2xl font-extrabold text-white font-heading">Christian Benjamín López Aguilar</h4>
+                        <p class="text-sm text-emerald-400 font-medium mt-0.5">
+                            Variables Asignadas: <strong>Pregunta 8 (Factor Económico / Costo %)</strong> & <strong>Pregunta 9 (Nivel de Recomendación 1-100)</strong>
+                        </p>
+                    </div>
+                    <div class="text-left lg:text-right text-xs text-slate-400">
+                        <span class="block">Submuestra Positiva Filtrada: <strong>$n = 90$ observaciones</strong></span>
+                        <span class="block">Tratamiento: No Agrupados y Agrupados ($k = 7$)</span>
+                    </div>
+                </div>
+
+                <!-- Grid de Archivos del Estudiante -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <!-- Tarjeta 1: Informe Individual PDF -->
+                    <div class="bg-slate-900/90 border border-slate-800 hover:border-emerald-500/50 p-5 rounded-xl transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-emerald-400 mb-2 font-mono">
+                                <span>INFORME INDIVIDUAL</span>
+                                <i data-lucide="file-text" class="w-4 h-4"></i>
+                            </div>
+                            <h5 class="text-base font-bold text-white font-heading mb-1">Trabajo_Individual_Lopez_Christian.pdf</h5>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                                25 páginas con normas APA 7ma ed. Matrices de 90 observaciones con potencias, estadígrafos de tendencia central, dispersión, asimetría, curtosis y tablas agrupadas ($k=7$).
+                            </p>
+                        </div>
+                        <div class="flex gap-2 pt-3 border-t border-slate-800/80">
+                            <button onclick="openModalPdf('docs/individuales/benjamin_lopez/Trabajo_Individual_Lopez_Christian.pdf', 'Trabajo Individual - Christian López')" class="flex-1 py-2 px-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver PDF
+                            </button>
+                            <a href="docs/individuales/benjamin_lopez/Trabajo_Individual_Lopez_Christian.pdf" download class="py-2 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2: Manual de Excel y Jamovi PDF -->
+                    <div class="bg-slate-900/90 border border-slate-800 hover:border-cyan-500/50 p-5 rounded-xl transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-cyan-400 mb-2 font-mono">
+                                <span>MANUAL DE SOFTWARE</span>
+                                <i data-lucide="book-open" class="w-4 h-4"></i>
+                            </div>
+                            <h5 class="text-base font-bold text-white font-heading mb-1">Manual_Excel_Jamovi_Lopez_Christian.pdf</h5>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                                Guía procedimental paso a paso para la importación y parametrización en Jamovi, formulación en Excel y demostración de exactitud paramétrica al 100%.
+                            </p>
+                        </div>
+                        <div class="flex gap-2 pt-3 border-t border-slate-800/80">
+                            <button onclick="openModalPdf('docs/individuales/benjamin_lopez/Manual_Excel_Jamovi_Lopez_Christian.pdf', 'Manual Excel y Jamovi - Christian López')" class="flex-1 py-2 px-3 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Manual
+                            </button>
+                            <a href="docs/individuales/benjamin_lopez/Manual_Excel_Jamovi_Lopez_Christian.pdf" download class="py-2 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3: Libro de Cálculo Excel & Jamovi CSV -->
+                    <div class="bg-slate-900/90 border border-slate-800 hover:border-emerald-500/50 p-5 rounded-xl transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-emerald-400 mb-2 font-mono">
+                                <span>LIBRO DE CÁLCULO & DATASET</span>
+                                <i data-lucide="file-spreadsheet" class="w-4 h-4"></i>
+                            </div>
+                            <h5 class="text-base font-bold text-white font-heading mb-1">Trabajo_Individual_P8_P9_Lopez_Christian.xlsx</h5>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                                Libro con 5 hojas institucionales, fórmulas dinámicas nativas COM sin errores locales, sumatorias de potencias y tablas de frecuencias de 14 columnas.
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-2 pt-3 border-t border-slate-800/80">
+                            <a href="docs/individuales/benjamin_lopez/Trabajo_Individual_P8_P9_Lopez_Christian.xlsx" download class="w-full py-2 px-3 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-semibold flex items-center justify-center gap-1.5 transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i> Descargar Excel (.xlsx)
+                            </a>
+                            <a href="docs/individuales/benjamin_lopez/datos_jamovi_individual.csv" download class="w-full py-1.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] font-medium flex items-center justify-center gap-1.5 transition">
+                                <i data-lucide="database" class="w-3 h-3"></i> CSV Jamovi Individual (90 filas)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENEDOR 2: ESTEBAN CUICHAN -->
+            <div id="content-esteban" class="student-content glass-panel p-6 sm:p-8 rounded-2xl hidden">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 border-b border-slate-800 pb-5 mb-6">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-xs font-mono uppercase bg-slate-800 text-slate-300 px-2 py-0.5 rounded">NRC: 36256</span>
+                            <span class="text-xs text-slate-400">Carrera: Tecnologías de la Información</span>
+                        </div>
+                        <h4 class="text-2xl font-extrabold text-white font-heading">Cuichan Males Lenin Esteban</h4>
+                        <p class="text-sm text-cyan-400 font-medium mt-0.5">
+                            Variable Asignada: <strong>Pregunta 6 (Estimación de viajes diarios de pares)</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+                    <!-- Informe Individual -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-[11px] font-mono text-emerald-400 uppercase">Informe Individual</span>
+                            <h5 class="text-sm font-bold text-white font-heading mt-1 mb-2">Parcial1_InformeIndv_Cuichan_Esteban</h5>
+                        </div>
+                        <div class="flex flex-col gap-2 pt-3 border-t border-slate-800">
+                            <button onclick="openModalPdf('docs/individuales/esteban_cuichan/Parcial1_InformeIndv_Cuichan_Esteban_36256.pdf', 'Informe Individual - Esteban Cuichan')" class="py-2 px-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver PDF
+                            </button>
+                            <a href="docs/individuales/esteban_cuichan/Parcial1_InformeIndv_Cuichan_Esteban_36256.docx" download class="py-1.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs flex items-center justify-center gap-1 transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i> Descargar DOCX
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Manual de Software -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-[11px] font-mono text-cyan-400 uppercase">Manual de Software</span>
+                            <h5 class="text-sm font-bold text-white font-heading mt-1 mb-2">Parcial1_ManualSoftware_Cuichan_Esteban</h5>
+                        </div>
+                        <div class="flex flex-col gap-2 pt-3 border-t border-slate-800">
+                            <button onclick="openModalPdf('docs/individuales/esteban_cuichan/Parcial1_ManualSoftware_Cuichan_Esteban_Pregunta6_36256.pdf', 'Manual Software - Esteban Cuichan')" class="py-2 px-3 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver PDF
+                            </button>
+                            <a href="docs/individuales/esteban_cuichan/Parcial1_ManualSoftware_Cuichan_Esteban_Pregunta6_36256.docx" download class="py-1.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs flex items-center justify-center gap-1 transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i> Descargar DOCX
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Archivo Excel -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-[11px] font-mono text-emerald-400 uppercase">Libro Excel</span>
+                            <h5 class="text-sm font-bold text-white font-heading mt-1 mb-2">Parcial1_EXCEL_Cuichan_Esteban_Pregunta6</h5>
+                        </div>
+                        <div class="pt-3 border-t border-slate-800">
+                            <a href="docs/individuales/esteban_cuichan/Parcial1_EXCEL_Cuichan_Esteban_Pregunta6_36256.xlsx" download class="w-full py-2 px-3 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i> Descargar XLSX
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Archivo Jamovi -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-[11px] font-mono text-purple-400 uppercase">Archivo Jamovi</span>
+                            <h5 class="text-sm font-bold text-white font-heading mt-1 mb-2">Parcial1_JAMOVI_Cuichan_Esteban.omv</h5>
+                        </div>
+                        <div class="pt-3 border-t border-slate-800">
+                            <a href="docs/individuales/esteban_cuichan/Parcial1_JAMOVI_Cuichan_Esteban_36256.omv" download class="w-full py-2 px-3 rounded-lg bg-purple-700 hover:bg-purple-600 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i> Descargar OMV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENEDOR 3: IAN ESCOBAR -->
+            <div id="content-ian" class="student-content glass-panel p-6 sm:p-8 rounded-2xl hidden">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 border-b border-slate-800 pb-5 mb-6">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-xs font-mono uppercase bg-slate-800 text-slate-300 px-2 py-0.5 rounded">NRC: 36256</span>
+                            <span class="text-xs text-slate-400">Carrera: Tecnologías de la Información</span>
+                        </div>
+                        <h4 class="text-2xl font-extrabold text-white font-heading">Escobar Rivadeneira Ian Alfredo</h4>
+                        <p class="text-sm text-cyan-400 font-medium mt-0.5">
+                            Variable Asignada: <strong>Pregunta 3 (Gasto semestral estimado en transporte)</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <!-- Informe Individual -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-mono text-emerald-400 uppercase">Informe Individual</span>
+                            <h5 class="text-base font-bold text-white font-heading mt-1 mb-2">Trabajo_Individual_Escobar_Ian.pdf</h5>
+                        </div>
+                        <div class="flex gap-2 pt-3 border-t border-slate-800">
+                            <button onclick="openModalPdf('docs/individuales/ian_escobar/Trabajo_Individual_Escobar_Ian.pdf', 'Trabajo Individual - Ian Escobar')" class="flex-1 py-2 px-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver PDF
+                            </button>
+                            <a href="docs/individuales/ian_escobar/Trabajo_Individual_Escobar_Ian.pdf" download class="py-2 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs flex items-center justify-center transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Manual Jamovi -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-mono text-cyan-400 uppercase">Manual de Software</span>
+                            <h5 class="text-base font-bold text-white font-heading mt-1 mb-2">Manual_Excel_Jamovi_Escobar_Ian.pdf</h5>
+                        </div>
+                        <div class="flex gap-2 pt-3 border-t border-slate-800">
+                            <button onclick="openModalPdf('docs/individuales/ian_escobar/Manual_Excel_Jamovi_Escobar_Ian.pdf', 'Manual Software - Ian Escobar')" class="flex-1 py-2 px-3 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Manual
+                            </button>
+                            <a href="docs/individuales/ian_escobar/Manual_Excel_Jamovi_Escobar_Ian.pdf" download class="py-2 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs flex items-center justify-center transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Excel -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-mono text-emerald-400 uppercase">Libro Excel</span>
+                            <h5 class="text-base font-bold text-white font-heading mt-1 mb-2">Trabajo_Individual_P3_Escobar_Ian.xlsx</h5>
+                        </div>
+                        <div class="pt-3 border-t border-slate-800">
+                            <a href="docs/individuales/ian_escobar/Trabajo_Individual_P3_Escobar_Ian.xlsx" download class="w-full py-2 px-3 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i> Descargar XLSX
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENEDOR 4: ISAAC RECALDE -->
+            <div id="content-isaac" class="student-content glass-panel p-6 sm:p-8 rounded-2xl hidden">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 border-b border-slate-800 pb-5 mb-6">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-xs font-mono uppercase bg-slate-800 text-slate-300 px-2 py-0.5 rounded">NRC: 36256</span>
+                            <span class="text-xs text-slate-400">Carrera: Tecnologías de la Información</span>
+                        </div>
+                        <h4 class="text-2xl font-extrabold text-white font-heading">Recalde Semblantes Isaac Eduardo</h4>
+                        <p class="text-sm text-cyan-400 font-medium mt-0.5">
+                            Variable Asignada: <strong>Pregunta 2 (Frecuencia semanal de viajes universitarios)</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <!-- Informe Individual -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-mono text-emerald-400 uppercase">Informe Individual</span>
+                            <h5 class="text-base font-bold text-white font-heading mt-1 mb-2">TrabajoIndividual_IsaacRecalde.pdf</h5>
+                        </div>
+                        <div class="flex gap-2 pt-3 border-t border-slate-800">
+                            <button onclick="openModalPdf('docs/individuales/isaac_recalde/TrabajoIndividual_IsaacRecalde.pdf', 'Trabajo Individual - Isaac Recalde')" class="flex-1 py-2 px-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver PDF
+                            </button>
+                            <a href="docs/individuales/isaac_recalde/TrabajoIndividual_IsaacRecalde.pdf" download class="py-2 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs flex items-center justify-center transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Manual Jamovi -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-mono text-cyan-400 uppercase">Manual de Software</span>
+                            <h5 class="text-base font-bold text-white font-heading mt-1 mb-2">Manual_Jamovi_IsaacRecalde_2.pdf</h5>
+                        </div>
+                        <div class="flex gap-2 pt-3 border-t border-slate-800">
+                            <button onclick="openModalPdf('docs/individuales/isaac_recalde/Manual_Jamovi_IsaacRecalde_2.pdf', 'Manual Jamovi - Isaac Recalde')" class="flex-1 py-2 px-3 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Manual
+                            </button>
+                            <a href="docs/individuales/isaac_recalde/Manual_Jamovi_IsaacRecalde_2.pdf" download class="py-2 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs flex items-center justify-center transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Excel -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-mono text-emerald-400 uppercase">Libro Excel</span>
+                            <h5 class="text-base font-bold text-white font-heading mt-1 mb-2">Isaac_Recalde_Pregunta2.xlsx</h5>
+                        </div>
+                        <div class="pt-3 border-t border-slate-800">
+                            <a href="docs/individuales/isaac_recalde/Isaac_Recalde_Pregunta2.xlsx" download class="w-full py-2 px-3 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i> Descargar XLSX
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENEDOR 5: JEREMY MARQUEZ -->
+            <div id="content-jeremy" class="student-content glass-panel p-6 sm:p-8 rounded-2xl hidden">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 border-b border-slate-800 pb-5 mb-6">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-xs font-mono uppercase bg-slate-800 text-slate-300 px-2 py-0.5 rounded">NRC: 36256</span>
+                            <span class="text-xs text-slate-400">Carrera: Tecnologías de la Información</span>
+                        </div>
+                        <h4 class="text-2xl font-extrabold text-white font-heading">Marquez Crespo Jeremy Joel</h4>
+                        <p class="text-sm text-cyan-400 font-medium mt-0.5">
+                            Variable Asignada: <strong>Pregunta 7 (Nivel de satisfacción del transporte universitario)</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <!-- Informe Individual -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-mono text-emerald-400 uppercase">Informe Individual</span>
+                            <h5 class="text-base font-bold text-white font-heading mt-1 mb-2">Trabajo_individual_Jeremy_Marquez</h5>
+                        </div>
+                        <div class="flex flex-col gap-2 pt-3 border-t border-slate-800">
+                            <button onclick="openModalPdf('docs/individuales/jeremy_marquez/Trabajo_individual_Jeremy_Marquez.pdf', 'Informe Individual - Jeremy Marquez')" class="py-2 px-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver PDF
+                            </button>
+                            <a href="docs/individuales/jeremy_marquez/Trabajo_individual_Jeremy_Marquez.docx" download class="py-1.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs flex items-center justify-center gap-1 transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i> Descargar DOCX
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Manual Jamovi -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-mono text-cyan-400 uppercase">Manual de Software</span>
+                            <h5 class="text-base font-bold text-white font-heading mt-1 mb-2">Manual_EXCEL_JAMOVI_Jeremy_Marquez</h5>
+                        </div>
+                        <div class="flex flex-col gap-2 pt-3 border-t border-slate-800">
+                            <button onclick="openModalPdf('docs/individuales/jeremy_marquez/Manual_EXCEL_JAMOVI_Jeremy_Marquez.pdf', 'Manual Software - Jeremy Marquez')" class="py-2 px-3 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver PDF
+                            </button>
+                            <a href="docs/individuales/jeremy_marquez/Manual_EXCEL_JAMOVI_Jeremy_Marquez.docx" download class="py-1.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs flex items-center justify-center gap-1 transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i> Descargar DOCX
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Excel -->
+                    <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-mono text-emerald-400 uppercase">Libro Excel</span>
+                            <h5 class="text-base font-bold text-white font-heading mt-1 mb-2">Excel_satisfaccion_P7.xlsx</h5>
+                        </div>
+                        <div class="pt-3 border-t border-slate-800">
+                            <a href="docs/individuales/jeremy_marquez/Excel_satisfaccion_P7.xlsx" download class="w-full py-2 px-3 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-semibold flex items-center justify-center gap-1 transition">
+                                <i data-lucide="download" class="w-3.5 h-3.5"></i> Descargar XLSX
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CONTENEDORES PARA PARCIAL 2 Y PARCIAL 3 (Placeholder Elegante) -->
+    <section id="contenido-parcial-2" class="max-w-4xl mx-auto px-4 py-20 text-center hidden">
+        <div class="glass-panel p-10 rounded-3xl border border-slate-800">
+            <div class="w-16 h-16 rounded-2xl bg-slate-800/80 flex items-center justify-center mx-auto mb-4 text-slate-400">
+                <i data-lucide="clock" class="w-8 h-8 text-amber-400"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white font-heading mb-2">Segundo Parcial en Construcción</h3>
+            <p class="text-slate-400 text-sm max-w-md mx-auto mb-6">
+                Este módulo se habilitará conforme al avance del sílabo de la cátedra de Estadística. Incluirá análisis combinatorio, probabilidades axiomáticas, teorema de Bayes y modelos de distribución probabilística.
+            </p>
+            <button onclick="switchParcial(1)" class="px-5 py-2.5 rounded-xl bg-emerald-600 text-white font-semibold text-xs transition hover:bg-emerald-500">
+                Regresar al Primer Parcial
+            </button>
+        </div>
+    </section>
+
+    <section id="contenido-parcial-3" class="max-w-4xl mx-auto px-4 py-20 text-center hidden">
+        <div class="glass-panel p-10 rounded-3xl border border-slate-800">
+            <div class="w-16 h-16 rounded-2xl bg-slate-800/80 flex items-center justify-center mx-auto mb-4 text-slate-400">
+                <i data-lucide="clock" class="w-8 h-8 text-indigo-400"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white font-heading mb-2">Tercer Parcial en Construcción</h3>
+            <p class="text-slate-400 text-sm max-w-md mx-auto mb-6">
+                Este módulo se habilitará al término del período académico, conteniendo intervalos de confianza, contrastes de hipótesis paramétricas y regresión lineal aplicada.
+            </p>
+            <button onclick="switchParcial(1)" class="px-5 py-2.5 rounded-xl bg-emerald-600 text-white font-semibold text-xs transition hover:bg-emerald-500">
+                Regresar al Primer Parcial
+            </button>
+        </div>
+    </section>
+
+    <!-- MODAL PARA PREVISUALIZAR ARCHIVOS PDF -->
+    <div id="pdf-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-3 sm:p-6">
+        <div class="bg-slate-900 border border-slate-700/80 rounded-2xl w-full max-w-5xl h-[90vh] flex flex-col overflow-hidden shadow-2xl">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between px-5 py-3.5 bg-slate-950 border-b border-slate-800">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="file-text" class="w-5 h-5 text-emerald-400"></i>
+                    <h4 id="modal-title" class="text-sm sm:text-base font-bold text-white font-heading truncate max-w-md sm:max-w-xl">Visor de Documento</h4>
+                </div>
+                <div class="flex items-center gap-2">
+                    <a id="modal-download" href="#" download class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold flex items-center gap-1 transition">
+                        <i data-lucide="download" class="w-3.5 h-3.5"></i> Descargar
+                    </a>
+                    <button onclick="closeModalPdf()" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Modal Body (Iframe) -->
+            <div class="flex-1 bg-slate-950">
+                <iframe id="modal-iframe" src="" class="w-full h-full border-0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="border-t border-slate-800/80 bg-slate-950/80 py-10 px-4 lg:px-8 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <img src="img/sello_espe.png" alt="Sello ESPE" class="h-8 w-auto">
+                <div class="text-left">
+                    <span class="text-slate-300 font-bold block">Universidad de las Fuerzas Armadas ESPE</span>
+                    <span>Departamento de Ciencias Exactas — Estadística (NRC 36256)</span>
+                </div>
+            </div>
+            <div>
+                <p>Docente: <strong>Ing. Alexandra Elizabeth Escobar Méndez</strong></p>
+                <p class="text-slate-600 mt-0.5">Campus Matriz Sangolquí — Noviembre 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Interactividad -->
+    <script>
+        // Inicializar iconos de Lucide
+        lucide.createIcons();
+
+        // Control de Tabs de Parciales
+        function switchParcial(num) {
+            const p1 = document.getElementById('contenido-parcial-1');
+            const p2 = document.getElementById('contenido-parcial-2');
+            const p3 = document.getElementById('contenido-parcial-3');
+
+            const b1 = document.getElementById('btn-p1');
+            const b2 = document.getElementById('btn-p2');
+            const b3 = document.getElementById('btn-p3');
+
+            // Reset contenidos
+            p1.classList.add('hidden');
+            p2.classList.add('hidden');
+            p3.classList.add('hidden');
+
+            // Reset estilos de botones
+            const inactiveStyle = 'bg-slate-900/80 border border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-300';
+            const activeStyle = 'bg-gradient-to-r from-emerald-600 to-teal-700 text-white shadow-lg transit-glow ring-2 ring-emerald-400';
+
+            b1.className = 'py-4 px-6 rounded-2xl font-bold font-heading text-base sm:text-lg transition-all duration-300 flex flex-col items-center justify-center gap-1 ' + (num === 1 ? activeStyle : inactiveStyle);
+            b2.className = 'py-4 px-6 rounded-2xl font-bold font-heading text-base sm:text-lg transition-all duration-300 flex flex-col items-center justify-center gap-1 ' + (num === 2 ? activeStyle : inactiveStyle);
+            b3.className = 'py-4 px-6 rounded-2xl font-bold font-heading text-base sm:text-lg transition-all duration-300 flex flex-col items-center justify-center gap-1 ' + (num === 3 ? activeStyle : inactiveStyle);
+
+            if (num === 1) p1.classList.remove('hidden');
+            if (num === 2) p2.classList.remove('hidden');
+            if (num === 3) p3.classList.remove('hidden');
+
+            lucide.createIcons();
+        }
+
+        // Control de Tabs de Estudiantes
+        function selectStudent(id) {
+            const students = ['benjamin', 'esteban', 'ian', 'isaac', 'jeremy'];
+            students.forEach(s => {
+                const content = document.getElementById('content-' + s);
+                const tab = document.getElementById('tab-' + s);
+                if (content && tab) {
+                    if (s === id) {
+                        content.classList.remove('hidden');
+                        tab.className = 'student-tab px-4 py-2.5 rounded-xl font-bold font-heading text-xs sm:text-sm whitespace-nowrap transition-all duration-200 bg-emerald-600 text-white shadow-md ring-2 ring-emerald-400';
+                    } else {
+                        content.classList.add('hidden');
+                        tab.className = 'student-tab px-4 py-2.5 rounded-xl font-bold font-heading text-xs sm:text-sm whitespace-nowrap transition-all duration-200 bg-slate-800/80 text-slate-400 hover:text-slate-200 hover:bg-slate-800';
+                    }
+                }
+            });
+            lucide.createIcons();
+        }
+
+        // Modal para Visualizar PDFs
+        function openModalPdf(url, title) {
+            const modal = document.getElementById('pdf-modal');
+            const iframe = document.getElementById('modal-iframe');
+            const titleEl = document.getElementById('modal-title');
+            const downloadLink = document.getElementById('modal-download');
+
+            titleEl.textContent = title;
+            downloadLink.href = url;
+            iframe.src = url;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            lucide.createIcons();
+        }
+
+        function closeModalPdf() {
+            const modal = document.getElementById('pdf-modal');
+            const iframe = document.getElementById('modal-iframe');
+            iframe.src = '';
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModalPdf();
+            }
+        });
+
+        // Pantalla completa para iframe grupal
+        function toggleFullscreenIframe(id) {
+            const el = document.getElementById(id);
+            if (el.requestFullscreen) {
+                el.requestFullscreen();
+            } else if (el.webkitRequestFullscreen) {
+                el.webkitRequestFullscreen();
+            }
+        }
+    </script>
+</body>
+</html>
